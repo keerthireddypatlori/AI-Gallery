@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <img id="popup-image" src="" alt="AI Image"> -->
+    <title>AI Revolution Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>AI Revolution Gallery</h1>
+        <p>Explore the Future of Artificial Intelligence</p>
+    </header>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button data-filter="all">All</button>
+        <button data-filter="ml">Machine Learning</button>
+        <button data-filter="cv">Computer Vision</button>
+        <button data-filter="nlp">NLP</button>
+        <button data-filter="genai">Generative AI</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <div class="item ml">
+            <img src="images/ml.jpg" alt="Machine Learning">
+            <h3>Machine Learning</h3>
+            <button class="learn-btn" data-topic="ml">
+    Learn More
+</button>
+        </div>
+
+        <div class="item cv">
+            <img src="images/cv.jpg" alt="Computer Vision">
+            <h3>Computer Vision</h3>
+            <button class="learn-btn" data-topic="cv">
+    Learn More
+</button>
+        </div>
+
+        <div class="item nlp">
+            <img src="images/nlp.jpg" alt="NLP">
+            <h3>Natural Language Processing</h3>
+            <button class="learn-btn" data-topic="npl">
+    Learn More
+</button>
+        </div>
+
+        <div class="item genai">
+            <img src="images/genai.jpg" alt="Generative AI">
+            <h3>Generative AI</h3>
+            <button class="learn-btn" data-topic="genai">
+    Learn More
+</button>
+        </div>
+
+    </div>
+
+    <!-- AI Facts Section -->
+    <section class="facts">
+        <h2>AI Facts</h2>
+        <p>Machine Learning powers recommendation systems like Netflix and Amazon.</p>
+        <p>Computer Vision enables facial recognition and self-driving cars.</p>
+        <p>NLP helps computers understand and generate human language.</p>
+        <p>Generative AI can create text, images, music, and code.</p>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+   
+    <!-- Popup Modal -->
+<div id="popup" class="popup">
+    <img id="popup-image" src="" alt="AI Image">
+
+  <div class="popup-content">
+
+    <span class="close">&times;</span>
+
+    <h2 id="popup-title"></h2>
+
+    <p id="popup-description"></p>
+
+    <h3>Applications</h3>
+    <ul id="popup-applications"></ul>
+
+    <h3>💡 Did You Know?</h3>
+    <p id="popup-fact"></p>
+
+  </div>
+
+</div>
+
+
+
+<script src ="script.js"></script>
+
+</body>
+</html>
